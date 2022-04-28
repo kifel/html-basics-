@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/navbar.css">
-    
+    <script src="navbar.js" defer></script>
+
     <title>NavBar</title>
 
 </head>
+
 <body>
     <header>
-        <h1 class="logo">KiNF S.A</h1>   <!--logo da empresa ou nome/ pode ser usado img -->
-        <nav>
-            <ul class="navlinks">
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Sobre nós</a></li>
-            </ul>
+        <nav class="navbar">
+            <h1 class="logo">KiNF S.A</h1>  <!--logo da empresa ou nome/ pode ser usado img -->
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#" Class="contact">Contato</a></li>
+                </ul>
+
+            </div>
         </nav>
-        <a href="#" class="contact"><button class="button-Contact">Contato</button></a>
     </header>
 </body>
+
 </html>

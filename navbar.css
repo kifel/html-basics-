@@ -1,8 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* Dark Grey */
 }
 
 li,
@@ -16,49 +13,96 @@ button {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: #24252A
+        /* Dark Grey */
 }
 
-header {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
     background-color: #32374d;
-}
-
-.logo {
-    cursor: pointer;
     color: #fff;
 }
 
-
-.navlinks {
-    list-style: none;
-}
-
-.navlinks li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.navlinks li a {
-    transition: all 0.3s ease 0s;
-}
-
-.navlinks li a:hover {
-    color: #0088a9;
-}
-
-.button-Contact {
-    padding: 9px 25px;
-    background-color: rgba(0, 116, 169, 1);
-    border: none;
-    border-radius: 50px;
-    transition: all 0.3s ease 0s;
+.logo {
+    font-size: 1.5rem;
+    margin: .5rem;
     cursor: pointer;
 }
 
-.button-Contact:hover {
-    background-color: rgba(0, 116, 169, 0.8);
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-links li a:hover {
+    color: #0088a9;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
