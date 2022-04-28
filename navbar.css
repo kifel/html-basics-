@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Dark Grey */
+}
+
+li,
+a,
+button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-family: montserrat;
+}
+
+body {
+    background-color: #24252A
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #32374d;
+}
+
+.logo {
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.navlinks {
+    list-style: none;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+    color: #0088a9;
+}
+
+.button-Contact {
+    padding: 9px 25px;
+    background-color: rgba(0, 116, 169, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.button-Contact:hover {
+    background-color: rgba(0, 116, 169, 0.8);
+}
