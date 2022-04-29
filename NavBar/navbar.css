@@ -77,7 +77,7 @@ body {
 
 @media (max-width: 700px) {
     .toggle-button {
-        top: 2rem;
+        top: 1rem;
         display: flex;
     }
 
